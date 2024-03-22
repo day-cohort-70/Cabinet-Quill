@@ -260,7 +260,7 @@ They have provided you with an ERD of their database and not much else.
 ```
 </details>
 
-This project uses [Radix](https://www.radix-ui.com/themes/docs/overview/getting-started) for styling. Check out the docs to learn more!
+This project is set up to use [Radix](https://www.radix-ui.com/themes/docs/overview/getting-started) for styling. Check out the docs to learn more!
 
 ### [✏️ Instructor Guide](./InstructorGuide.md)
 
