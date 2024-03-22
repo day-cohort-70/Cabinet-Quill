@@ -3,7 +3,7 @@
 You've been hired to build an ecommerce website for the stationary store Cabinet & Quill! 
 
 They have provided you with an ERD of their database and not much else.
-![](./c&Q_ERD.png)
+![](./C&Q_ERD.png)
 
 ## Setup
 1. Clone the repository 
@@ -257,36 +257,8 @@ They have provided you with an ERD of their database and not much else.
 ```
 </details>
 
-## Instructor Guide
+### [✏️ Instructor Guide](./InstructorGuide.md)
 
-In session one we talked about the basics of the life cycle of a react component: initial render and changes in state causing a rerender. We talked about the `useState` hook and how it returns an array of two values: state and a setter fn for that state, and how it accepts an arguments that serves as the initial value of the state. We talked about the `useEffect` hook and how it's a function similar to `addEventListener` in that it accepts two arguments: what to do and when to do it. We only talked about passing an empty dependency array to run the callback only on initial render of the component. We talked about `JSX` and that all `JSX` must be wrapped in a parent element or react fragment. We stopped at displaying all the product names on the page.
-
-
-### Ideas for features:
-
-When building these features, keep in mind which part of the course the students are on to know which concepts they have been exposed to:
-
-**Part One:** `JSX`, `useState`, and `useEffect`
-
-**Part Two:** Breaking things into smaller components, rendering components, props.
-
-**Part Three:** `Routes`, `Link`, `useParams`, `useNavigate`, authentication, forms
-
-
-
-#### Viewing Products:
-
-- Display each product with its name, image, price, and whether or not it's sold out. (`product.stock`)
-- Add an input to filter in-stock vs out-of-stock items
-- Add a checkbox group to filter which product types are displayed on the page
-
-#### Authentication
-
-```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/day-cohort-70/Cabinet-Quill/main/auth-setup.sh)"
-```
-
-- 
 
 
 
