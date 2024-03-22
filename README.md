@@ -1,4 +1,4 @@
-# Welcome Aboard Cabinet & Quill!
+# Welcome aboard Cabinet & Quill!
 
 You've been hired to build an ecommerce website for the stationary store Cabinet & Quill! 
 
