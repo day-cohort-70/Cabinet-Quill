@@ -225,6 +225,8 @@ Run this script to get the basic boiler plate code for authentication. We don't 
 - View order details to see which items are in an order
 - Add a button to the product cards to add to cart
 - Allow the user to delete items from their cart
+- When a user completes an order, adjust the stock amount on the product.
+- Don't allow the user to add a product that is out of stock to their cart
 
 #### I do think it's important to demo forms since this is a capstone requirement. One option is to utilize the staff property on a user and only allow staff users to create, update, and delete products. To do this, update the application to follow the routing pattern above for Part 4. 
 - Create a route and view for staff users to create a new product
