@@ -26,6 +26,7 @@ export const Login = () => {
           "cab_user",
           JSON.stringify({
             id: user.id,
+            isStaff: user.isStaff,
           })
         )
 
@@ -81,6 +82,7 @@ export const Register = (props) => {
   const [customer, setCustomer] = useState({
     email: "",
     userName: "",
+    isStaff: false,
   })
   let navigate = useNavigate()
 
@@ -91,6 +93,7 @@ export const Register = (props) => {
           "cab_user",
           JSON.stringify({
             id: createdUser.id,
+            staff: createdUser.isStaff,
           })
         )
 
@@ -146,6 +149,22 @@ export const Register = (props) => {
               placeholder="Email address"
               required
             />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div className="form-group">
+            <label>
+              <input
+                onChange={(evt) => {
+                  const copy = { ...customer }
+                  copy.isStaff = evt.target.checked
+                  setCustomer(copy)
+                }}
+                type="checkbox"
+                id="isStaff"
+              />
+              I am an employee{" "}
+            </label>
           </div>
         </fieldset>
         <fieldset>
