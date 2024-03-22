@@ -282,6 +282,10 @@ When building these features, keep in mind which part of the course the students
 
 #### Authentication
 
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/day-cohort-70/Cabinet-Quill/main/auth-setup.sh)"
+```
+
 - 
 
 

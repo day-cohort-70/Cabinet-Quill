@@ -1,6 +1,7 @@
 #!/bin/bash
 set -u
 
+mkdir ./src/components
 mkdir ./src/components/auth
 mkdir ./src/views
 
