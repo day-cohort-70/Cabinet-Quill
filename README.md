@@ -27,17 +27,20 @@ They have provided you with an ERD of their database and not much else.
     {
       "id": 1,
       "username": "R.Carroll",
-      "email": "r.carroll@bujo.com"
+      "email": "r.carroll@bujo.com",
+      "isStaff": true
     },
     {
       "id": 2,
       "username": "AmandaRachLee",
-      "email": "amanda@arl.com"
+      "email": "amanda@arl.com",
+      "isStaff": false
     },
     {
       "id": 3,
       "username": "Blossom",
-      "email": "bb@blossombujo.com"
+      "email": "bb@blossombujo.com",
+      "isStaff": false
     }
   ],
   "productTypes": [
