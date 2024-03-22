@@ -3,7 +3,7 @@
 You've been hired to build an ecommerce website for the stationary store Cabinet & Quill! 
 
 They have provided you with an ERD of their database and not much else.
-![](./C&Q_ERD.png)
+![](./c&Q_ERD.png)
 
 ## Setup
 1. Clone the repository 
