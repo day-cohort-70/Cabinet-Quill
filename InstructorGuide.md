@@ -16,7 +16,7 @@ These are just ideas, obviously do whatever you like with this application. When
 
 **Part Three:** `Routes`, `Link`, `useParams`, `useNavigate`, authentication, forms
 
-
+**Part Four:** Staff vs Non-Staff users and conditional routing for these users
 
 ### Parts One and Two Feature Ideas:
 
@@ -146,7 +146,7 @@ Run this script to get the basic boiler plate code for authentication. We don't 
     ```
     </details>
 
-    #### Once they get to Part 4, this is the routing pattern they build to accommodate staff vs non-staff users. It's up to you if you want to demo different types of users. They database is set up to accommodate this. 
+    #### Once they get to Part 4, this is the routing pattern they build to accommodate staff vs non-staff users. It's up to you if you want to demo different types of users. The database is set up to accommodate this. 
 
     <details>
         <summary>views/ApplicationViews.jsx</summary>
@@ -218,7 +218,7 @@ Run this script to get the basic boiler plate code for authentication. We don't 
     }
     ```
     </details>
-    .
+    
 - Add route and view for the user's cart (cart will be whichever order is incomplete: `order.complete`)
 - Allow the user to complete their order
 - Add route and view for the user's past orders
