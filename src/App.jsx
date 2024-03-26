@@ -1,20 +1,12 @@
-import { useEffect, useState } from "react"
-import { getAllProducts } from "./services/productsService"
+import { AllOrders } from "./components/AllOrdersWithProducts.jsx"
+import { AllProducts } from "./components/AllProducts.jsx"
 
 export const App = () => {
-  const [allProducts, setAllProducts] = useState([])
-
-  useEffect(() => {
-    getAllProducts().then((productsArr) => {
-      setAllProducts(productsArr)
-    })
-  }, [])
 
   return (
-    <>
-      {allProducts.map((product) => (
-        <div key={`product-${product.id}`}>{product.name}</div>
-      ))}
-    </>
+    <div class="dashboard">
+      <AllProducts />
+      <AllOrders />
+    </div>
   )
 }

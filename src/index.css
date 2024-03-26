@@ -4,7 +4,7 @@
 /* FONTS
 font-family: "Nunito", sans-serif;
 font-family: "Quicksand", sans-serif;
-font-family: "Roboto", sans-serif; 
+font-family: "Roboto", sans-serif;
 */
 
 /* COLOR PALETTE */
@@ -32,7 +32,7 @@ textarea {
 
 body {
   background-color: var(--appBackground);
-  margin: 0;
+  margin: 2rem;
 }
 
 h1,
@@ -111,3 +111,11 @@ button {
   text-shadow: 2px 3px 4px lightslategray;
 }
 
+
+
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
