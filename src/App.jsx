@@ -4,7 +4,7 @@ import { AllProducts } from "./components/AllProducts.jsx"
 export const App = () => {
 
   return (
-    <div class="dashboard">
+    <div className="dashboard">
       <AllProducts />
       <AllOrders />
     </div>

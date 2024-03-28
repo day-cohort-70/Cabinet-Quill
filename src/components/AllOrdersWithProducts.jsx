@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { getAllOrderWithItemsEmbedded } from "../services/ordersService.js"
-import { getAllProducts, getProduct } from "../services/productsService.js"
+import { getAllProducts } from "../services/productsService.js"
 
 export const AllOrders = () => {
     const [allOrders, setAllOrders] = useState([])
@@ -27,7 +27,7 @@ export const AllOrders = () => {
                         <h2>Order #{order.id}</h2>
                         <ol>
                         {
-                            order.orderitems.map(oi => <li>{ getFullProductInfo(oi.productId) }</li>)
+                            order.orderitems.map((oi,i) => <li key={i}>{ getFullProductInfo(oi.productId) }</li>)
                         }
                         </ol>
                     </div>
