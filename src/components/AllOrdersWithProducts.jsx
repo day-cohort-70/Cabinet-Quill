@@ -1,21 +1,17 @@
 import { useEffect, useState } from "react"
 import { getAllOrderWithItemsEmbedded } from "../services/ordersService.js"
-import { getAllProducts } from "../services/productsService.js"
 
-export const AllOrders = () => {
+export const AllOrders = ({allProducts}) => {
     const [allOrders, setAllOrders] = useState([])
-    const [products, setProducts] = useState([])
 
     useEffect(() => {
         getAllOrderWithItemsEmbedded().then((ordersArr) => {
             setAllOrders(ordersArr)
         })
-
-        getAllProducts().then(productsArray => setProducts(productsArray))
     }, [])
 
     const getFullProductInfo = (productId) => {
-        const foundProduct = products.find(product => product.id === productId)
+        const foundProduct = allProducts.find(product => product.id === productId)
         return foundProduct.name
     }
 
