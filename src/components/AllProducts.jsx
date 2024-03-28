@@ -1,15 +1,5 @@
-import { useEffect, useState } from "react"
-import { getAllProducts } from "../services/productsService"
-
-export const AllProducts = () => {
-  const [allProducts, setAllProducts] = useState([])
-
-  useEffect(() => {
-    getAllProducts().then((productsArr) => {
-      setAllProducts(productsArr)
-    })
-  }, [])
-
+export const AllProducts = ({allProducts}) => {
+ 
   return (
     <>
       {allProducts.map((product) => (
