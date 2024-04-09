@@ -9,7 +9,8 @@ They have provided you with an ERD of their database and not much else.
 1. Clone the repository 
 2. Navigate to the project directory `Cabinet-Quill`
 3. Run `npm install`
-4. To start the application, run `npm run dev`
+4. Switch to the `workshop`. This branch will contain the latest code from the live workshops.
+5. To start the application, run `npm run dev`
 
 **API**
 1. In your `workspace` directory, create a new directory called `cq-api`
