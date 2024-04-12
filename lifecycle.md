@@ -1,5 +1,5 @@
 # Understanding the life cycle of the App component.
-This outlines what happens when the user loads the page, before any other interaction with the DOM (ei clicking on a dropdown). 
+This outlines what happens when the user loads the page, before any other interaction with the DOM (ie clicking on a dropdown). 
 
 There are much simpler ways to achieve what we're trying to do here, but the purpose of doing it the way we are below is to better understand how useState and useEffect work together. This isn't a _best practices_ lesson, but rather a lesson that dives deeper into how a `useState` setter function triggers a component to rerender and how `useEffect` responds to this. 
 
