@@ -1,4 +1,6 @@
 # Welcome aboard Cabinet & Quill!
+In the latest workshop we dove deeper into the lifecycle of the App component and used the useEffect hook to react to state changing. Read the notes on that [here](./lifecycle.md).
+
 
 You've been hired to build an ecommerce website for the stationary store Cabinet & Quill! 
 
