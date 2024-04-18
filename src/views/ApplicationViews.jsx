@@ -1,14 +1,10 @@
-import { useEffect, useState } from "react"
-import { Route, Routes, Outlet } from "react-router-dom"
+import { Outlet, Route, Routes } from "react-router-dom"
+import { ProductsView } from "../components/products/ProductsView"
+import { NavBar } from "../components/nav/NavBar"
+import { useState } from "react"
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({})
-
-  useEffect(() => {
-    const localCabUser = localStorage.getItem("cab_user")
-    const cabUserObject = JSON.parse(localCabUser)
-    setCurrentUser(cabUserObject)
-  }, [])
 
   return (
     <Routes>
@@ -16,11 +12,12 @@ export const ApplicationViews = () => {
         path="/"
         element={
           <>
+            <NavBar />
             <Outlet />
           </>
         }
       >
-        <Route index element={<>Hey</>} />
+        <Route index element={<ProductsView />} />
       </Route>
     </Routes>
   )

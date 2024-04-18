@@ -1,0 +1,22 @@
+#navbar {
+  list-style: none;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid 2px orange;
+  padding-bottom: 0.5em;
+  margin-top: 0.5em;
+  height: 1.5em;
+}
+
+.navbar-item {
+}
+
+.navbar-logout {
+  margin-left: auto;
+  margin-right: 3em;
+}
+
+.navbar-link {
+}

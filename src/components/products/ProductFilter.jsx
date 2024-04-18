@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getProductTypes } from "../services/productsService"
+import { getProductTypes } from "../../services/productsService"
 
 /* the props object: 
   {
