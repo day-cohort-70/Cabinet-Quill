@@ -8,8 +8,8 @@ import { Authorized } from "./views/Authorized"
 export const App = () => {
   return (
     <Routes>
-      <Route path="/login" element={<Login />}></Route>
-      <Route path="/register" element={<Register />}></Route>
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
 
       <Route
         path="*"
