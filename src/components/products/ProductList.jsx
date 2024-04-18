@@ -1,11 +1,10 @@
-// The responsibility of the ProductList component is to generate the JSX for the list of products that we wish to display on the DOM
-
 /* the props object: 
-  {
-    products: [{...}],
-  }
+{
+  products: [{...}],
+}
 */
 
+// The responsibility of the ProductList component is to generate the JSX for the list of products that we wish to display on the DOM
 export const ProductList = ({ products }) => {
   return (
     <div id="product-container">
