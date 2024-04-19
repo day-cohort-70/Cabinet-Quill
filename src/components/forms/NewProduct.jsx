@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react"
-import { getProductTypes } from "../../services/productsService"
+import { useNavigate } from "react-router-dom"
+import { getProductTypes, postNewProduct } from "../../services/productsService"
+import "./form.css"
 
 export const NewProduct = () => {
   const [newProduct, setNewProduct] = useState({})
   const [productTypes, setProductTypes] = useState([])
+
+  const navigate = useNavigate() // returns to us a function that allows us to navigate to a specific url
 
   const getAllProductTypes = async () => {
     const prodTypesArr = await getProductTypes()
@@ -25,6 +29,10 @@ export const NewProduct = () => {
     event.preventDefault() //prevent the default functionality of reloading the page
 
     //todo: post our new product object to the database!
+    postNewProduct(newProduct).then((postedProdObj) => {
+      //todo: Now navigate to the products page so we can see our new product!
+      navigate(`/product/${postedProdObj.id}`)
+    })
   }
 
   return (
@@ -102,7 +110,7 @@ export const NewProduct = () => {
           />
         </label>
       </fieldset>
-      <button className="btn-secondary" onClick={handleSave}>
+      <button className="btn-secondary save-button" onClick={handleSave}>
         Save
       </button>
     </form>

@@ -267,6 +267,11 @@ This project is set up to use [Radix](https://www.radix-ui.com/themes/docs/overv
 
 ### [✏️ Instructor Guide](./InstructorGuide.md)
 
+### Brainstorm Product Details View
+Make a component for product details
+Click event for clicking on the product (in ProductList.jsx) that will navigate to the details view
+Define a route for the product detail view
+
 
 
 

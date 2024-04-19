@@ -1,2 +1,4 @@
-.form-title {
+.save-button {
+  float: inline-end;
+  margin-top: 1em;
 }
